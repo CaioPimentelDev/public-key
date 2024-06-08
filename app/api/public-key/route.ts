@@ -10,7 +10,7 @@ export async function GET() {
         const getTokenAndChallenge = async () => {
             try {
             const response = await axios.post('https://sandbox.api.pagseguro.com/oauth2/token', {
-              grand_type: 'challenge',
+              grant_type: 'challenge',
               scope: 'certificate.create'
             });
         
